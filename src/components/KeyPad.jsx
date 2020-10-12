@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Paper } from "@material-ui/core";
+import { Box, Button } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -31,6 +31,11 @@ const styles = {
   }
 };
 
+
+/**
+ * Returns keypad component with all required keys
+ * @props {handleClick} - parent function to handle key clicks
+ */
 const KeyPadComponent = (props) => {
   const classes = useStyles();
   const handleClick = props.handleClick;
@@ -47,7 +52,9 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             (
           </Button>
@@ -55,7 +62,9 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             CE
           </Button>
@@ -63,7 +72,9 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             )
           </Button>
@@ -71,7 +82,9 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             C
           </Button>
@@ -160,21 +173,27 @@ const KeyPadComponent = (props) => {
           <Button
             variant="contained"
             style={styles.keyButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             1
           </Button>
           <Button
             variant="contained"
             style={styles.keyButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             2
           </Button>
           <Button
             variant="contained"
             style={styles.keyButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             3
           </Button>
@@ -182,7 +201,9 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             +
           </Button>
@@ -193,14 +214,18 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             .
           </Button>
           <Button
             variant="contained"
             style={styles.keyButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             0
           </Button>
@@ -208,7 +233,9 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             =
           </Button>
@@ -216,7 +243,9 @@ const KeyPadComponent = (props) => {
             variant="contained"
             color="primary"
             style={styles.operatorButton}
-            onClick={(e) => handleClick(e.currentTarget.children[0].textContent)}
+            onClick={(e) =>
+              handleClick(e.currentTarget.children[0].textContent)
+            }
           >
             -
           </Button>

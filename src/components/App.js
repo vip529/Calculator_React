@@ -29,13 +29,18 @@ const styles = {
   }
 }
 
+/**
+ * @state - {result} - stores result/input expression.
+ */
 const App = () => {
 
   const [result, setResult] = useState("");
   
-
+  /**
+   * handle key clicks.
+   * @param {string} keyValue - value of key pressed. 
+   */
   const handleClick = (keyValue)=>{
-    console.log(keyValue)
     if (keyValue === "=") {
       calculate()
     }
@@ -54,6 +59,9 @@ const App = () => {
 
   }
 
+  /**
+   * calculate expression provided to calculator.
+   */
   const calculate = ()=>{
     let currentValue = result;
 
@@ -69,10 +77,16 @@ const App = () => {
     }
   }
 
+  /**
+   * resets the output screen, fires on clicking "C" button.
+   */
   const reset = () =>{
     setResult("");
   }
 
+  /**
+   * deletes last character, fires on clicking "CE" buton.
+   */
   const backspace = () =>{
     const updatedValue = result.slice(0,-1);
     setResult(updatedValue); 

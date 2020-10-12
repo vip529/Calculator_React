@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/**
+ * Return an output-box to show result as well as operation.
+ * @props {children} render whatever chilren passed to it.
+ */
 const OutputBox =(props)=>{
   const classes = useStyles();
   return (
